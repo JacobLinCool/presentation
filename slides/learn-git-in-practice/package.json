@@ -3,7 +3,7 @@
     "name": "learn-git-in-practice",
     "type": "module",
     "scripts": {
-        "build": "slidev build --base './' --out '../../dist/learn-git-in-practice'",
+        "build": "slidev build --out '../../dist/learn-git-in-practice' --base '/learn-git-in-practice/'",
         "dev": "slidev --open",
         "export": "slidev export"
     },
