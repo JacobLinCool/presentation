@@ -1,0 +1,19 @@
+{
+    "name": "presentations",
+    "author": "JacobLinCool <jacob@csie.cool> (https://github.com/JacobLinCool)",
+    "type": "module",
+    "scripts": {
+        "format": "prettier --write . --ignore-path .gitignore",
+        "build:all": "pnpm -r build && tsx scripts/build.ts"
+    },
+    "devDependencies": {
+        "@slidev/cli": "^0.48.1",
+        "@types/node": "^20.11.26",
+        "@types/serve-handler": "^6.1.4",
+        "prettier": "^3.2.5",
+        "prettier-plugin-organize-imports": "^3.2.4",
+        "serve-handler": "^6.1.5",
+        "tsx": "^4.7.1"
+    },
+    "packageManager": "pnpm@8.15.4"
+}
