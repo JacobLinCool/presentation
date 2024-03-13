@@ -3,7 +3,7 @@
     "author": "JacobLinCool <jacob@csie.cool> (https://github.com/JacobLinCool)",
     "type": "module",
     "scripts": {
-        "format": "prettier --write . --ignore-path .gitignore",
+        "format": "prettier --write . '!slides/**/*.md' --ignore-path .gitignore",
         "build:all": "pnpm -r build && tsx scripts/build.ts"
     },
     "devDependencies": {

@@ -2,13 +2,13 @@
 theme: seriph
 title: Learn Git in Practice
 info: |
-    ## Learn Git in Practice
-    This is a presentation about Git basics.
+  ## Learn Git in Practice
+  This is a presentation about Git basics.
 # apply any unocss classes to the current slide
 class: text-center
 highlighter: shiki
 drawings:
-    persist: false
+  persist: false
 transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
@@ -21,16 +21,14 @@ _2024.03.13_
 程式設計二 TAlk 1 / GDSC NTNU
 
 ---
-
-## layout: section
+layout: section
+---
 
 # Recap
 
 ---
-
 layout: center
 class: bg-white text-black text-center
-
 ---
 
 <logos-github-icon class="text-9xl text-white" />
@@ -42,8 +40,8 @@ class: bg-white text-black text-center
 </v-click>
 
 ---
-
-## layout: two-cols
+layout: two-cols
+---
 
 ## Undo, Redo with Commit
 
@@ -87,7 +85,7 @@ index f26b97c..2f0fad8 100644
 +++ b/program.c
 @@ -1,6 +1,11 @@
  #include <stdio.h>
-
+ 
  int main() {
 -    printf("Hello, World!\n");
 +    char name[10];
@@ -103,8 +101,8 @@ index f26b97c..2f0fad8 100644
 </v-click>
 
 ---
-
-## layout: center
+layout: center
+---
 
 ````md magic-move
 ```c
@@ -164,8 +162,8 @@ int main() {
 ````
 
 ---
-
-## layout: two-cols
+layout: two-cols
+---
 
 ## Doing Experiment with Branch
 
@@ -206,8 +204,8 @@ git switch feature # switch to the feature branch
 
 <v-clicks>
 
--   搞壞東西容易善後
--   不會卡到其他工作
+- 搞壞東西容易善後
+- 不會卡到其他工作
 
 </v-clicks>
 
@@ -223,7 +221,7 @@ git switch feature # switch to the feature branch
 
 ````md magic-move
 ```sh
-git branch
+git branch       
   howard
   jacob
 * main
@@ -231,7 +229,7 @@ git branch
 ```
 
 ```sh
-git branch
+git branch       
   feat-photo-edit
   fix-upload-error
 * main
@@ -241,10 +239,8 @@ git branch
 </v-click>
 
 ---
-
 layout: two-cols
-
----
+--- 
 
 ## Use My Code!
 
@@ -266,7 +262,7 @@ gitGraph TB:
    commit
    checkout main
    merge feature
-```
+``` 
 
 </v-click>
 
@@ -315,10 +311,10 @@ Merge Conflict!
 
 <v-clicks>
 
--   建構產生的檔案（有原始碼就可以產生了）
--   套件管理器安裝的依賴套件（例如 `node_modules`）
--   包含機密資訊的檔案（例如 `.env` 可能有 API Key）
--   跟專案無關的檔案（例如作業系統索引 `.DS_Store`）
+- 建構產生的檔案（有原始碼就可以產生了）
+- 套件管理器安裝的依賴套件（例如 `node_modules`）
+- 包含機密資訊的檔案（例如 `.env` 可能有 API Key）
+- 跟專案無關的檔案（例如作業系統索引 `.DS_Store`）
 
 </v-clicks>
 
@@ -336,8 +332,8 @@ Merge Conflict!
 </v-click>
 
 ---
-
-## layout: two-cols
+layout: two-cols
+---
 
 ## Collaboration with Remote
 
@@ -407,7 +403,7 @@ Pull Request
 
 （一種在平台上的 merge 機制）
 
-</v-click>
+</v-click> 
 
 ---
 
@@ -419,20 +415,20 @@ Pull Request
 name: Test
 
 on:
-    pull_request:
-        branches:
-            - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-    test:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v4
-            - run: make test
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: make test
 ```
 
 ---
+layout: center
+---
 
-## layout: center
-
-## Let's Write Something Together
+## Let's Build Something Together
